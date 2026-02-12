@@ -7,7 +7,7 @@
 
 body.dashboard-body {
   font-family: 'Nunito', sans-serif;
-  background: linear-gradient(135deg, #66ea73 0%, #50ab25 100%);
+  background: linear-gradient(135deg, #66a8ea 0%, #2529ab 100%);
   min-height: 100vh;
   display: flex;
   color: #333;
@@ -54,7 +54,7 @@ body.dashboard-body {
 }
 
 .menu li.active {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #66a8ea 0%, #2529ab 100%);
   color: white;
 }
 
