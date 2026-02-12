@@ -2,53 +2,85 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <title>Dashboard | BuildYourBank</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BuildYourBank | Power Up Your Pocket</title>
-
   <link rel="stylesheet" href="dashboard.css">
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;900&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body class="dashboard-body">
 
-  <!-- NAVBAR -->
-  <nav class="navbar">
-    <div class="logo">🐢 BuildYourBank</div>
-    
-    
-  </nav>
+<!-- SIDEBAR -->
+<div class="sidebar">
+  <div class="brand">🐢 BuildYourBank</div>
+
+  <ul class="menu">
+    <li class="active">🏠 Learn</li>
+    <li>🏆 Leaderboard</li>
+    <li>🎯 Quests</li>
+    <li>🛍 Shop</li>
+    <li>👤 Profile</li>
+  </ul>
+</div>
 
 
-  <!-- HERO SECTION -->
-  <section class="hero">
+<!-- MAIN CONTENT -->
+<div class="main-content">
 
-    <div class="hero-text">
-      <h1>Invest in your Future</h1>
-
-      <p>
-        This is not a finance app. It is a financial life simulator that lets teens and kids 
-        experience Adulthood.
-      </p>
-
-      <button class="primary-btn">Get Started</button>
+  <!-- TOP BAR -->
+  <div class="top-bar">
+    <div class="section-title">
+      SECTION 1, UNIT 1  
+      <h2>Budget Basics</h2>
     </div>
 
-    <!-- SYMMETRICAL MASCOT AREA -->
-    <div class="hero-image">
-      <div class="turtle">🐢</div>
-      <div class="coin">💰</div>
-      <div class="bird">🐦</div>
-      <div class="rabbit">🐰</div>
-      <div class="squirrel">🐿️</div>
+    <div class="stats">
+      💎 500  
+      ❤️ 5  
+      ⚡ 120 XP
+    </div>
+  </div>
+
+
+  <!-- LEARNING PATH -->
+  <div class="learning-path">
+
+    <div class="node active-node">
+      <span>START</span>
     </div>
 
-  </section>
+    <div class="node"></div>
+    <div class="node"></div>
+    <div class="node locked"></div>
+    <div class="node"></div>
 
-  <!-- FOOTER -->
-  <footer class="footer">
-    © 2026 BuildYourBank.
-  </footer>
+  </div>
 
-<script src="script.js"></script>
+</div>
+
+
+<!-- RIGHT PANEL -->
+<div class="right-panel">
+
+  <div class="card">
+    <h3>Daily Quest</h3>
+    <p>Earn 20 XP</p>
+    <div class="progress-bar">
+      <div class="progress" style="width: 40%;"></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>Unlock Leaderboards</h3>
+    <p>Complete 5 more lessons to compete.</p>
+  </div>
+
+  <div class="card">
+    <button class="primary-btn full-width">Create Profile</button>
+    <button class="secondary-btn full-width">Sign In</button>
+  </div>
+
+</div>
+
 </body>
 </html>
