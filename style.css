@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+}
+
+body {
+  background: linear-gradient(to bottom, #4facfe, #e0f7fa);
+  color: #333;
+  overflow-x: hidden;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background: white;
+  border-radius: 0 0 25px 25px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 900;
+  color: #27ae60;
+}
+
+.login-btn {
+  padding: 10px 22px;
+  border: 2px solid #27ae60;
+  background: transparent;
+  border-radius: 25px;
+  color: #27ae60;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-btn:hover {
+  background: #27ae60;
+  color: white;
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 80px;
+  color: white;
+}
+
+.hero-text {
+  max-width: 550px;
+}
+
+.hero-text h1 {
+  font-size: 56px;
+  font-weight: 900;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+}
+
+.hero-text p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.primary-btn {
+  padding: 16px 35px;
+  background: #27ae60;
+  border: none;
+  border-radius: 30px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.primary-btn:hover {
+  transform: scale(1.05);
+}
+
+/* MASCOT AREA */
+.hero-image {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  font-size: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Center Turtle */
+.turtle {
+  font-size: 120px;
+  animation: floatCenter 3s ease-in-out infinite;
+  z-index: 2;
+}
+
+/* Top Right Coin */
+.coin {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 60px;
+  animation: floatRight 3s ease-in-out infinite;
+}
+
+/* Top Left Bird */
+.bird {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 60px;
+  animation: floatLeft 3s ease-in-out infinite;
+}
+
+/* Bottom Left Rabbit */
+.rabbit {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 70px;
+  animation: floatLeft 3s ease-in-out infinite;
+}
+
+/* Bottom Right Squirrel */
+.squirrel {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 70px;
+  animation: floatRight 3s ease-in-out infinite;
+}
+
+@keyframes floatCenter {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0px); }
+}
+
+@keyframes floatLeft {
+  0% { transform: translateY(0px) translateX(0px); }
+  50% { transform: translateY(-10px) translateX(-10px); }
+  100% { transform: translateY(0px) translateX(0px); }
+}
+
+@keyframes floatRight {
+  0% { transform: translateY(0px) translateX(0px); }
+  50% { transform: translateY(-10px) translateX(10px); }
+  100% { transform: translateY(0px) translateX(0px); }
+}
+
+
+/* FOOTER */
+.footer {
+  padding: 30px;
+  text-align: center;
+  background: #4c85d4;
+  color: white;
+}
+
+/* RESPONSIVE */
+@media(max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-image {
+    margin-top: 40px;
+  }
+}

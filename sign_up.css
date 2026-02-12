@@ -1,0 +1,79 @@
+/* Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+  }
+
+/* Page background */
+body {
+min-height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+background: linear-gradient(135deg, #4a6cf7, #6a11cb);
+}
+
+/* Card */
+.signup-card {
+background: #ffffff;
+width: 340px;
+padding: 35px 28px;
+border-radius: 14px;
+box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+text-align: center;
+}
+
+/* Heading */
+.signup-card h2 {
+margin-bottom: 20px;
+font-weight: 900;
+color: #333;
+}
+
+/* Inputs */
+.input-group {
+margin-bottom: 16px;
+}
+
+.input-group input {
+width: 100%;
+padding: 12px 14px;
+border-radius: 7px;
+border: 1px solid #ccc;
+font-size: 14px;
+outline: none;
+transition: 0.25s;
+}
+
+.input-group input:focus {
+border-color: #4a6cf7;
+box-shadow: 0 0 0 2px rgba(74,108,247,0.15);
+}
+
+/* Submit button */
+.main-login-btn {
+width: 100%;
+padding: 12px;
+border: none;
+border-radius: 7px;
+background: #4a6cf7;
+color: white;
+font-weight: 900;
+cursor: pointer;
+margin-top: 6px;
+transition: 0.25s;
+}
+
+.main-login-btn:hover {
+background: #3553d4;
+}
+
+/* Responsive */
+@media (max-width: 400px) {
+.signup-card {
+width: 90%;
+}
+}
