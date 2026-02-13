@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard | BuildYourBank</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="dashboard.css">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;900&display=swap" rel="stylesheet">
+</head>
+
+<body class="dashboard-body">
+
+<!-- SIDEBAR -->
+<div class="sidebar">
+  <a href="index.html"><img src="logo.png" alt="The Logo"></a>
+
+  <ul class="menu">
+
+    <li class="active">🏠 Learn</li>
+    <li class="active"><a href="leaderboard.html" class="main-login-btn">🏆 Leaderboard</a></li>
+    <li class="active"><a href="game.html" class="main-login-btn">🎮 Games</a></li>
+    <li class="active"><a href="dashboard.html" class="main-login-btn">👤 Profile</a></li>
+  </ul>
+</div>
+
+
+<!-- MAIN CONTENT -->
+<div class="main-content">
+
+  <!-- TOP BAR -->
+  <div class="top-bar">
+    <div class="section-title">
+      SECTION 1, UNIT 1  
+      <h2>Lesson 1</h2>
+    </div>
+
+    <div class="stats">
+      🪙 500
+      ⚡ 120 XP
+    </div>
+  </div>
+
+
+  <!-- LEARNING PATH -->
+  <div class="learning-path">
+
+   <form action="/submit_quiz" method="post">
+        <!-- Question 1 -->
+        <fieldset>
+            <legend>1️⃣ What is a budget?</legend>
+            
+            <input type="radio" id="q1_optionA" name="question1" value="A">
+            <label for="q1_optionA">A type of bank</label><br>
+            
+            <input type="radio" id="q1_optionB" name="question1" value="B">
+            <label for="q1_optionB">A plan for how to spend and save money</label><br>
+            
+            <input type="radio" id="q1_optionC" name="question1" value="C">
+            <label for="q1_optionC">Free money from parents</label><br>
+
+            <input type="radio" id="q1_optiond" name="question1" value="d">
+            <label for="q1_optionC">A shopping app</label><br>
+        </fieldset>
+    </form>
+
+       <form action="/submit_quiz" method="post">
+               <!-- Question 2 -->
+        <fieldset>
+            <legend>2️⃣ You get ₹500 pocket money.
+                    
+                You want to save ₹200.
+                 How much can you spend?
+            </legend>
+            
+            <input type="radio" id="q1_optionA" name="question1" value="A">
+            <label for="q1_optionA"> ₹100</label><br>
+            
+            <input type="radio" id="q1_optionB" name="question1" value="B">
+            <label for="q1_optionB"> ₹200</label><br>
+            
+            <input type="radio" id="q1_optionC" name="question1" value="C">
+            <label for="q1_optionC"> ₹300</label><br>
+
+            <input type="radio" id="q1_optiond" name="question1" value="d">
+            <label for="q1_optionC"> ₹400</label><br>
+        </fieldset>
+    </form>
+
+        
+  </div>
+
+</div>
+
+
+<!-- RIGHT PANEL -->
+<div class="right-panel">
+
+  <div class="card">
+    <h3>Daily Quest</h3>
+    <p>Earn 20 XP</p>
+    <div class="progress-bar">
+      <div class="progress" style="width: 40%;"></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>Unlock Leaderboards</h3>
+    <p>Complete 5 more lessons to compete.</p>
+  </div>
+
+</div>
+
+</body>
+</html>
