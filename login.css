@@ -11,7 +11,7 @@
 .modal {
 position: fixed;
 inset: 0;
-background: linear-gradient(135deg, #4a6cf7, #6a11cb);
+background: linear-gradient(135deg, #abe2a6, #23c03d);
 display: flex;
 align-items: center;
 justify-content: center;
@@ -76,7 +76,7 @@ width: 100%;
 padding: 10px;
 border: none;
 border-radius: 7px;
-background: #4a6cf7;
+background: #23c03d;
 color: white;
 font-weight: 900;
 cursor: pointer;
@@ -89,11 +89,11 @@ transition: 0.25s;
 color: white;
 text-decoration: none;
 display: block;
-padding: 10px;
+padding: 1px;
 }
 
 .main-login-btn:hover {
-background: #3553d4;
+background: #76d06e;
 }
 
 /* Divider */
@@ -126,43 +126,22 @@ gap: 10px;
 }
 
 /* Google button */
-.google-btn {
+.google-btn g_id_signin {
 width: 100%;
 padding: 10px;
 border-radius: 7px;
-border: 1px solid #1877f2;
-background: #1877f2;
-color: white;
+border: 1px solid #23c03d;
+background: #23c03d;
+color: rgb(103, 230, 92);
 font-weight: 800;
 cursor: pointer;
 }
 
-.google-btn:hover {
-background: #1877f2;
+.google-btn g_id_signin:hover {
+background: #76d06e;
 }
 
 .g-icon {
-margin-right: 8px;
-font-weight: 900;
-}
-
-/* Facebook button */
-.facebook-btn {
-width: 100%;
-padding: 10px;
-border-radius: 7px;
-border: none;
-background: #1877f2;
-color: white;
-font-weight: 800;
-cursor: pointer;
-}
-
-.facebook-btn:hover {
-background: #0f5fd1;
-}
-
-.f-icon {
 margin-right: 8px;
 font-weight: 900;
 }

@@ -13,7 +13,7 @@ min-height: 100vh;
 display: flex;
 align-items: center;
 justify-content: center;
-background: linear-gradient(135deg, #4a6cf7, #6a11cb);
+background: linear-gradient(135deg, #abe2a6, #23c03d);
 }
 
 /* Card */
@@ -55,11 +55,11 @@ box-shadow: 0 0 0 2px rgba(74,108,247,0.15);
 
 /* Submit button */
 .main-login-btn {
-width: 100%;
-padding: 12px;
+width: 90%;
+padding: 10px;
 border: none;
 border-radius: 7px;
-background: #4a6cf7;
+background: #23c03d;
 color: white;
 font-weight: 900;
 cursor: pointer;
@@ -68,7 +68,7 @@ transition: 0.25s;
 }
 
 .main-login-btn:hover {
-background: #3553d4;
+background: #76d06e;
 }
 
 /* Responsive */

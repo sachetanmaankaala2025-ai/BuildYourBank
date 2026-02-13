@@ -6,6 +6,9 @@
 
    <link rel="stylesheet" href="login.css">
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;900&display=swap" rel="stylesheet">
+
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+
 </head>
 
 <div class="modal" id="loginModal">
@@ -38,13 +41,18 @@
               </a>
             </button>
 
-            <button type="button" class="google-btn">
-            <span class="g-icon">G</span>GOOGLE
-            </button>
+           <div id="g_id_onload"
+              data-client_id="YOUR_CLIENT_ID_HERE"
+              data-callback="handleGoogleLogin">
+          </div>
 
-            <button type="button" class="facebook-btn">
-            <span class="f-icon">f</span>FACEBOOK
-            </button>
+            <div class="google-btn g_id_signin"
+              data-type="standard"
+              data-size="large"
+              data-theme="outline"
+              data-text="signin_with"
+              data-shape="rectangular">
+            </div>
         </div>
       </form>
 
