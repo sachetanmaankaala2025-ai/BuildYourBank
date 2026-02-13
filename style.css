@@ -6,7 +6,7 @@
 }
 
 body {
-  background: linear-gradient(to bottom, #4facfe, #e0f7fa);
+  background: linear-gradient(to bottom, #4ffe8f, #e0f7fa);
   color: #333;
   overflow-x: hidden;
 }
@@ -162,7 +162,7 @@ body {
 .footer {
   padding: 30px;
   text-align: center;
-  background: #4c85d4;
+  background: #25a152;
   color: white;
 }
 
